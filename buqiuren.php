@@ -8,16 +8,16 @@ if(!empty($response)){
   foreach($response as $key=>$row){
     $list = $key+1;
     $message.=$sub.$list.'：'.$row['ORG_NAME'];
-    $message.=$sub.'缺'.$row['TITLE'];
-    $message.=$sub.'位於'.$row['WORK_PLACE_TYPE'];
-    $message.=$sub.'詳情請點'.$row['VIEW_URL'].$sub;
+    $message.=$sub.'職缺：'.$row['TITLE'];
+    $message.=$sub.'位於：'.$row['WORK_PLACE_TYPE'];
+    $message.=$sub.'詳情請點：'.$row['VIEW_URL'].$sub;
   }
 }
 
 
 $headers = [
   'Content-Type: application/x-www-form-urlencoded',
-  'Authorization: Bearer Zl4QpMoFU2hPihfpDJNehMv1ARSuKWLcdYh7CVk8WYk'
+  'Authorization: Bearer Sv0HqJizpB1T267Qk20PKHsPBwE5c7VXrp39UI5um62'
 ];
 // 備忘錄 Sv0HqJizpB1T267Qk20PKHsPBwE5c7VXrp39UI5um62
 // 正式 Zl4QpMoFU2hPihfpDJNehMv1ARSuKWLcdYh7CVk8WYk
